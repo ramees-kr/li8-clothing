@@ -12,7 +12,7 @@
       "price": 34.99,
       "image": "men-fashion.jpg"
     }
-    // Add more men's products as needed
+    // More mens product will be added here
   ],
   "women": [
     {
@@ -27,7 +27,7 @@
       "price": 29.99,
       "image": "women-fashion.jpg"
     }
-    // Add more women's products as needed
+    // More women product will be added here
   ],
   "kids": [
     {
@@ -42,6 +42,6 @@
       "price": 19.99,
       "image": "kids-fashion.jpg"
     }
-    // Add more kids' products as needed
+    // More kids product will be added here
   ]
 }
