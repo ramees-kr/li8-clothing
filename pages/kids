@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kids' Fashion</title>
+  </head>
+  <body>
+    <img
+      src="../uploads/images/kids-fashion-landing-page.jpg"
+      alt="kids landing page photo"
+    />
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
