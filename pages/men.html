@@ -3,97 +3,118 @@
   <head>
     <title>Mens Fashion</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/men.css" />
-    <link rel="Fashion icon" href="../assets/images/fashion_logo.png" />
-    <button
-      type="button"
-      style="float: right; width: 100px; height: 50px; color: saddlebrown"
-    >
-      Sign Up
-    </button>
-    <br />
-    <br />
-    <br />
-    <button type="button" style="float: right; color: saddlebrown">Cart</button>
-    <button type="button" style="float: right; color: saddlebrown">
-      Wishlist
-    </button>
-    <button type="button" style="float: right; color: saddlebrown">
-      Profile
-    </button>
-    <img
-      src="../assets/images/fashion_logo.png"
-      alt="Fashion_logo"
-      style="width: 200px; height: 200px"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <h2 style="color: saddlebrown"><u>Welcome to Li8 Fashion </u></h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/head_foot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
   <body>
     <header>
-      <div id="logo">
-        <img
-          src="../assets/images/fashion_logo.png"
-          alt="brandLogo"
-          id="landingPage"
-        />
-      </div>
-      <ul id="nav_bar">
-        <li id="megamenu_container">
-          <a href="../Homepages/menHomePage.html">men</a>
-        </li>
-        <li><a href="../Homepages/womenHomePage.html">women</a></li>
-        <li><a href="#">kids</a></li>
-        <li><a href="../Homepages/homeLiving.html">home & living</a></li>
-        <li><a href="#">beauty</a></li>
-        <li id="studio"><a href="#">studio</a><span>new</span></li>
-      </ul>
-      <div id="search">
-        <input
-          type="text"
-          id="search_bar"
-          placeholder="Search for products, brands and more"
-        />
-        <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-      </div>
-      <div id="right_icon">
-        <div id="reggDropdown">
-          <!-- DROPDOWN MENU TO FOR LOGIN AND SIGNUP -->
-          <div id="drop">
-            <a href="/Profile/profile.html" class="dropList">login</a>
-            <a href="/Profile/signup.html" class="dropList">sign up</a>
-          </div>
-          <i class="fa-regular fa-user"></i>
-          <span>profile</span>
-        </div>
-        <div>
-          <i class="fa-regular fa-heart"></i>
-          <span>wishlist</span>
-        </div>
-        <div>
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span>bag</span>
-        </div>
-      </div>
+      <link rel="Fashion icon" href="../assets/images/fashion_logo.png" /><br />
 
-      <!-- TOGGLE MENU -->
-      <div id="toggle">
-        <i class="bx bx-menu dropbtn" onclick="myFunction()"></i>
-        <div id="myDropdown" class="dropdown-content">
-          <div class="top">
-            <a href="../Homepages/menHomePage.html">men</a>
-            <a href="../Homepages/womenHomePage.html">women</a>
-            <a href="#">kids</a>
-            <a href="../Homepages/homeLiving.html">home & living</a>
-            <a href="#">beauty</a>
-            <a href="#">studio</a>
-          </div>
-          <div class="bottom">
-            <i class="fa-regular fa-user fa_user" id="profile"></i>
-            <i class="fa-regular fa-heart fa_wishlist"></i>
-            <i class="fa-solid fa-bag-shopping fa_cart"></i>
-          </div>
+      <div class="main">
+        <img src="../images/fashion_logo.png" alt="Fashion_logo" />
+        <div class="flex-container">
+          <h2><u>Welcome to Li8 Fashion </u></h2>
+          <h3>Show your elegance with us!!</h3>
         </div>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <button
+          onclick="document.location='../../pages/signup.html'"
+          type="button"
+          style="float: right; color: saddlebrown"
+        >
+          Sign Up
+        </button>
+        <button
+          onclick="document.location='../../pages/profile.html'"
+          type="button"
+          style="float: right; color: saddlebrown"
+        >
+          Profile
+        </button>
+        <button type="button" style="float: right; color: saddlebrown">
+          Cart
+        </button>
+        <button type="button" style="float: right; color: saddlebrown">
+          Wishlist
+        </button>
       </div>
+      <section style="background: saddlebrown; color: rgba(0, 0, 0, 0.5)">
+        <nav class="shift">
+          <ul>
+            <li>
+              <a href="../index.html" target="_blank" style="color: brown"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="../pages/men.html" target="_blank" style="color: brown"
+                >Men's Clothing</a
+              >
+            </li>
+            <li>
+              <a href="../pages/women.html" target="_blank" style="color: brown"
+                >Women's Clothing</a
+              >
+            </li>
+            <li>
+              <a href="../pages/kids.html" target="_blank" style="color: brown"
+                >Kid's Clothing</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/accessories.html"
+                target="_blank"
+                style="color: brown"
+                >Accessories</a
+              >
+            </li>
+            <li>
+              <a href="../pages/" target="_blank" style="color: brown"
+                >Offers!!!</a
+              >
+            </li>
+            <li>
+              <a href="../pages/about.html" target="_blank" style="color: brown"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
     <div id="sorting">
@@ -233,94 +254,47 @@
       <div id="container"></div>
     </div>
 
-    <footer>
-      <section id="section_1">
-        <div id="left">
-          <div>
-            <h4>online shopping</h4>
-            <p>men</p>
-            <p>women</p>
-            <p>home & living</p>
-            <p>beauty</p>
-            <p>gift cards</p>
-            <p>myntra insider<span id="latest">New</span></p>
-          </div>
-          <div>
-            <h4>useful links</h4>
-            <p>men</p>
-            <p>faq</p>
-            <p>t&c</p>
-            <p>terms of use</p>
-            <p>track order</p>
-            <p>shipping</p>
-            <p>cancellation</p>
-            <p>returns</p>
-            <p>whitehat</p>
-            <p>blog</p>
-            <p>careers</p>
-            <p>privacy policy</p>
-            <p>site map</p>
-            <p>corporate information</p>
-          </div>
-          <div>
-            <h4>experience myntra app on mobile</h4>
-            <img src="https://bit.ly/3LluZ4L" alt="android" />
-            <img src="https://bit.ly/3DmWQys" alt="ios" />
-            <h4 id="social_connect">keep in touch</h4>
-            <div>
-              <i class="fa-brands fa-facebook-square"></i>
-              <i class="fa-brands fa-twitter-square"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-instagram"></i>
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Online Shopping</h3>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div id="right">
-          <div>
-            <img src="https://bit.ly/3JPiL47" alt="original" />
-            <p>
-              <span>100% ORIGINAL</span> guarantee for all products at
-              myntra.com
+            <div class="col-sm-4 col-md-3 item">
+              <h3>HELP & SUPPORT</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Shop With Us</h3>
+              <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Offers</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"> <i class="icon ion-social-twitter"></i></a
+              ><a href="#"> <i class="icon ion-social-snapchat"></i></a
+              ><a href="#"> <i class="icon ion-social-instagram"></i></a>
+            </div>
+            <p style="color: saddlebrown; clear: both">
+              &copy; 2023 www.li8.com. All rights reserved.
             </p>
           </div>
-          <div>
-            <img src="https://bit.ly/3uBalH4" alt="return_policy" />
-            <p><span>Return within 30days</span> of receiving your order</p>
-          </div>
         </div>
-      </section>
-
-      <section id="section_2">
-        <h4>popular searches</h4>
-        <div></div>
-      </section>
-
-      <section id="section_3">
-        <a href="">pillow</a><a href="">towels</a><a href="">bathroom rugs</a
-        ><a href="">Water Bottle</a><a href="">jeans</a><a href="">suit</a
-        ><a href="">trouser</a><a href="">shalwar</a><a href="">shampoo</a
-        ><a href="">sherwani</a><a href="">cargo</a> <a href="">shirt</a
-        ><a href="">mirrors</a><a href="">shelwar</a><a href="">Bracelets</a
-        ><a href="">sherwani</a><a href="">laundary bags</a
-        ><a href="">Water Bottle</a><a href="">Water Bottle</a
-        ><a href="">rings</a><a href="">Water Bottle</a>
-        <a href="">Water Bottle</a>
-        <a href="">curtians</a><a href="">tableware</a><a href="">blazzers</a
-        ><a href="">wall lamps</a><a href="">Water Bottle</a
-        ><a href="">bed cover</a><a href="">cushion covers</a
-        ><a href="">key holders</a>
-      </section>
-
-      <section id="section_4">
-        <p>In case of any concern <a href="#"> contact us</a></p>
-        <p>&#169; 2022 www.myntra.com. All rights reserved.</p>
-      </section>
-    </footer>
+      </footer>
+    </div>
   </body>
-  <footer>
-    <p style="color: saddlebrown">
-      &copy; 2023 www.li8.com. All rights reserved.
-    </p>
-  </footer>
 </html>
 <script src="../assets/js/men.js"></script>
