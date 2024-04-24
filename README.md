@@ -1,6 +1,6 @@
-# Fashion Shopping Website - li8 Clothing
+# Fashion Shopping Website
 
-Welcome to our Fashion Shopping Website repository! This project aims to provide users with a seamless shopping experience for the latest fashion items. Below is an overview of the technologies used and the structure of the project:
+This project is a Fashion Shopping Website offering a seamless online shopping experience for the latest fashion items. Utilizing HTML5, CSS, and JavaScript, the website features browsing collections, new arrivals, and trending items. Bootstrap ensures responsive design, while external libraries like Font Awesome and Google Fonts enhance styling and visual elements.
 
 ## Technologies Used
 
