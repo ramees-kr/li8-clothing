@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kids Fashion</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/products_page.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/f40de700d8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html" style="height: 75px">
+          <img
+            src="../assets/images/fashion_logo.png"
+            alt="Fashion_logo"
+            style="height: 75px"
+          />
+        </a>
+        <h1>LI8 FASHION</h1>
+      </div>
+
+      <div class="menu">
+        <li><a href="../pages/men.html">MEN</a></li>
+        <li><a href="../pages/women.html">WOMEN</a></li>
+        <li><a href="../pages/kids.html">KIDS</a></li>
+        <li><a href="../pages/accessories.html">ACCESSORIES</a></li>
+      </div>
+
+      <div class="search-box">
+        <form action="">
+          <input
+            type="text"
+            placeholder="Find your fashion"
+            name="search-box"
+          />
+          <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </form>
+      </div>
+
+      <div class="buttons">
+        <div class="dropdown">
+          <button
+            class="dropdown-btn"
+            onclick="toggleDropdown('profileDropdown')"
+          >
+            <i class="fa-solid fa-user"></i>
+          </button>
+
+          <div id="profileDropdown" class="dropdown-content">
+            <a href="../pages/signup.html"
+              ><i class="fa fa-user-plus"></i> &nbspSign Up</a
+            >
+            <!-- <a href="../pages/login.html"
+            ><i class="fa fa-sign-in"></i> &nbspLogin</a
+          > -->
+          </div>
+        </div>
+        <button type="button">
+          <a href="../pages/wishlist.html" style="color: white"
+            ><i class="fa fa-heart"></i
+          ></a>
+        </button>
+        <button type="button">
+          <a href="../pages/cart.html" style="color: white"
+            ><i class="fa fa-shopping-cart"></i
+          ></a>
+        </button>
+      </div>
+    </nav>
+
+    <img
+      src="..\assets\images\kids.jpg"
+      alt="kids_landing page"
+      style="width: 100%; cursor: pointer"
+      onclick="redirectToPage(event)"
+    />
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Online Shopping</h3>
+              <ul>
+                <li><a href="pages/men.html">MEN</a></li>
+                <li><a href="pages/women.html">WOMEN</a></li>
+                <li><a href="pages/kids.html">KIDS</a></li>
+                <li><a href="pages/accessories.html">ACCESSORIES</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>HELP & SUPPORT</h3>
+              <ul>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/contactus.html">Contact Us</a></li>
+                <li><a href="pages/faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Shop With Us</h3>
+              <ul>
+                <li>
+                  <a href="pages/term&condition.html">Terms & Conditions</a>
+                </li>
+                <li><a href="pages/sale.html">Offers</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"
+                ><i
+                  class="icon ion-social-facebook"
+                  style="font-size: 50px; padding-left: 10px; color: white"
+                ></i></a
+              ><a href="#">
+                <a href="#"
+                  ><i
+                    class="icon ion-social-twitter"
+                    style="font-size: 50px; padding-left: 10px; color: white"
+                  ></i
+                ></a>
+                <a href="#"></a
+                ><i
+                  class="icon ion-social-snapchat"
+                  style="font-size: 50px; padding-left: 10px; color: white"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="icon ion-social-instagram"
+                  style="font-size: 50px; padding-left: 10px; color: white"
+                ></i
+              ></a>
+            </div>
+            <p style="color: saddlebrown; clear: both">
+              &copy; 2023 www.li8.com. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../assets/js/script.js"></script>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Terms & Conditions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- for term&condition strucutre -->
+     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+
+    <!-- display style for header and footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- to display icon for profile wishlist and cart -->
+    <script src="https://kit.fontawesome.com/f40de700d8.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: saddlebrown;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: saddlebrown;
+    }
+
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    main {
+
+        width: 100%;
+        min-height: 100%;
+
+    }
+
+    .main-header {
+
+        width: 100%;
+        height: 75px;
+        background-color: saddlebrown;
+        display: block;
+
+    }
+
+    .main-header ul.header-options {
+
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 100px;
+
+    }
+
+    .main-header ul.header-options li {
+        display: inline-block;
+    }
+
+    .main-header ul.header-options li.title {
+
+        font-size: 18px;
+        color: #fff;
+        font-family: Arial;
+        cursor: pointer;
+
+    }
+
+    .header-mobile {
+
+        width: auto;
+        height: 75px;
+        background-color: saddlebrown;
+        text-align: center;
+        display: none;
+    }
+
+    .title-mobile {
+        font-size: 18px;
+        color: #fff;
+        font-family: Arial;
+        cursor: pointer;
+        padding-top: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #6D6F79;
+        font-family: Arial;
+        cursor: pointer;
+    }
+
+    a:hover {
+        font-size: 16px;
+        color: #9598a7;
+    }
+
+
+    .card {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: auto;
+        width: 1200px;
+        border-radius: 30px;
+        background-color: saddlebrown;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card .primary-heading {
+        text-align: center;
+        font-family: josefin sans;
+        color: white;
+        padding-top: 50px;
+        font-size: 4em;
+    }
+
+    .paragraph {
+        font-family: josefin sans;
+        color: rgb(179, 179, 179);
+        margin-left: 50px;
+        margin-right: 25px;
+        padding-top: 50px;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        font-weight: 500;
+    }
+
+    .bold {
+        font-weight: 700;
+        color: white;
+    }
+
+    .footer-heading {
+        text-align: center;
+        font-family: josefin sans;
+        color: white;
+        margin-bottom: 50px;
+        font-size: 2em;
+        line-height: 35px;
+    }
+
+    @media only screen and (max-width: 1218px) {
+        .card {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: auto;
+            width: 1000px;
+            border-radius: 30px;
+            background-color: saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media only screen and (max-width: 1012px) {
+        .card {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: auto;
+            width: 800px;
+            border-radius: 30px;
+            background-color: saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media only screen and (max-width: 832px) {
+        .card {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: auto;
+            width: 600px;
+            border-radius: 30px;
+            background-color: saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card .primary-heading {
+            font-size: 3.5em;
+        }
+
+        .footer-heading {
+            font-size: 1.5em;
+        }
+    }
+
+    @media only screen and (max-width: 626px) {
+        .card {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: auto;
+            width: 450px;
+            border-radius: 30px;
+            background-color: saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header-mobile {
+            display: block;
+        }
+
+        .main-header {
+            display: none;
+        }
+
+        .card .primary-heading {
+            font-size: 3em;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .card {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: auto;
+            width: 350px;
+            border-radius: 30px;
+            background-color: saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card .primary-heading {
+            font-size: 2em;
+        }
+    }
+
+    @media only screen and (max-width: 365px) {
+        .card {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: auto;
+            width: 290px;
+            border-radius: 30px;
+            background-color: saddlebrown;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card .primary-heading {
+            font-size: 2em;
+        }
+    }
+    #social-icon {
+        font-size: 50px;
+        padding-left: 10px;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <link rel="Fashion icon" href="../assets/images/fashion_logo.png" /><br />
+        <nav style="position:absolute;">
+            <div class="logo">
+                <a href="index.html"><img src="../assets/images/fashion_logo.png" alt="Fashion_logo" style="height:75px"></a>
+                <h1>LI8 FASHION</h1>
+            </div>
+      
+            <div class="menu">
+              <li><a href="../pages/men.html">MEN</a></li>
+              <li><a href="../pages/women.html">WOMEN</a></li>
+              <li><a href="../pages/kids.html">KIDS</a></li>
+              <li><a href="../pages/Accessories.html">ACCESSORIES</a></li>
+            </div>
+      
+            <div class="search-box">
+              <form action="">
+                <input type="text" placeholder="Find your fashion" name="search-box" />
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+              </form>
+            </div>
+      
+            <div class="buttons">
+              <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown('profileDropdown')">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+      
+                <div id="profileDropdown" class="dropdown-content">
+                  <a href="../pages/signup.html"><i class="fa fa-user-plus"></i> &nbspSign Up</a>
+                  <!-- <a href="../pages/login.html"><i class="fa fa-sign-in"></i> &nbspLogin</a> -->
+                </div>
+              </div>
+              <button type="button"><a href="../pages/wishlist.html" style="color:white;"><i class="fa fa-heart"></a></i></button>
+              <button type="button"><a href="../pages/cart.html" style="color:white;"><i class="fa fa-shopping-cart"></i></a></button>
+            </div>
+          </nav>
+      
+    </header>
+
+    <main>
+        <section id="terms-of-service">
+            <div class="card">
+                <h1 class="primary-heading">Terms of Service</h1>
+                <p class="paragraph">
+                    The Services are intended to promote the Company’s products and services available in Canada. If you
+                    order products to be shipped to another country, you may be redirected to the local site of the
+                    country to which products are shipped, in which case, you will be subject to the terms of that local
+                    site.<br><br><br>
+                    1) <span class="bold">Use of Services:</span> Subject to the terms and conditions of this Agreement,
+                    Li8 Fashion hereby
+                    grants you a limited, revocable, non-transferable and non-exclusive license to access and use the
+                    Services by displaying it on an internet browser, for our Site, or on a mobile device, for our Apps,
+                    only for the purpose of personal, non-commercial, shopping for items sold on the Site or Apps and
+                    not for any commercial use or use on behalf of any third party, except as explicitly permitted by us
+                    in advance. Any breach of this Agreement shall result in the immediate revocation of the license
+                    granted in this paragraph without notice to you.
+                    <br><br><br>
+                    2) <span class="bold">Limitations on Use:</span> Except as permitted in the paragraph above,
+                    you may not reproduce, distribute, display, sell, lease, transmit, create derivative works from,
+                    translate, modify, reverse-engineer, disassemble, decompile or otherwise exploit the Services or any
+                    portion of them unless expressly permitted by us in writing. You may not make any commercial use of
+                    any of the information provided on the Services or make any use of the Services for the benefit of
+                    another business unless explicitly permitted by us in advance. You agree that we may, in our sole
+                    discretion and without prior notice, terminate your access to the Services at any time with or
+                    without cause. In addition, from time to time, we may restrict access to some or all parts of the
+                    Services, including, but not limited to, the ability to upload documents, make payments, or send
+                    messages.
+                    You shall not upload to, distribute, or otherwise publish through the Services any content,
+                    information, or other material that: (a) violates or infringes the copyrights, patents, trademarks,
+                    service marks, trade secrets, or other proprietary rights of any person; (b) is libelous,
+                    threatening, defamatory, obscene, indecent, pornographic, or could give rise to any civil or
+                    criminal liability under local or international law; or (c) includes any bugs, logic bombs, viruses,
+                    worms, trap doors, Trojan horses or other code, material or properties which are malicious or
+                    technologically harmful.
+                    <br><br><br>
+                    3) <span class="bold"> Account Creation and Termination:</span> In order to access some
+                    features or services available on the Services, you will have to create a Li8 Fashion user account ( “User
+                    Account” ), including setting up a password. You may not use another person’s account or password.
+                    You are solely responsible for protecting the confidentiality of your User Account and the
+                    information you hold for your account, including your password, as well as any and all activity that
+                    occurs under your User Account. In no event shall we be liable for any loss, theft or fraudulent use
+                    of your User Account. You agree to immediately notify us of any unauthorized use of your User
+                    Account, password, or any other breach or threatened breach of the Site or App's security. You
+                    warrant and confirm that you will only use your own User Account or password.
+                    <br><br><br>
+                    4) <span class="bold">Wallet: </span> If you create a User Account, you will be provided with
+                    a Li8 Fashion digital wallet ( "Wallet" ) that can be used to collect and hold Wallet credits, promotional
+                    coupons, and promotional points, and to track gift cards (see details on each type below) issued by
+                    Li8 Fashion via the Services. The Wallet is provided as a convenience to enable you to store and/or
+                    readily access these features; you cannot load your own funds to the Wallet, and nothing held in the
+                    Wallet has any cash value except as expressly indicated below. Wallet credits, promotional coupons,
+                    promotional points, and gift cards can only be redeemed in connection with purchase of products from
+                    Li8 Fashion, and not for any other purpose. The Wallet is accessible via the Site or the App in the
+                    section "My Assets" of your User Account.
+                    <br><br><br>
+                    5) <span class="bold">Promotional Points: </span>Promotional points are stored in your Wallet.
+                    Promotional points may be earned by participating in certain activities and by purchasing products
+                    on the Site or the App, as further detailed in Bonus Point Policy , promotional points are subject
+                    to expiration and cancellation by the Company in accordance with the Bonus Point Policy. Promotional
+                    points can only be redeemed on the website through which they were granted (for example, if
+                    promotional points were granted on the ca.Li8Fashion.com website, then they can only be redeemed on that
+                    website).
+                    <br><br><br>
+                    6) <span class="bold">Promotional Coupons:</span> Coupons are subject to additional terms and
+                    conditions found in Li8 Fashion’s Coupon Policy , which may change from time to time with or without
+                    notice. Coupons provided to you are subject to expiration in accordance with the Coupon Policy. The
+                    use of coupons granted by Li8 Fashion is subject to limitations as provided in connection with each
+                    promotional coupon. Promotional coupons can only be used on the website through which they were
+                    granted (for example, if a promotional coupon was granted on the ca.Li8Fashion.com website, then it can
+                    only be used on that website).
+                    <br><br><br>
+                    7) <span class="bold">Privacy policy: </span>This Privacy Policy ( "Policy" ) explains how your
+                    personal information is collected when you access this website or use other services provided by
+                    Li8 Fashion Distribution Canada Limited , including any written, electronic, or oral communications,
+                    online or offline, and purchases or refunds performed (collectively, the "Services" ), and how your
+                    personal information is processed, used and disclosed. This Privacy Policy also explains the rights
+                    and choices you have associated with your information. If you would like to know the details of the
+                    preceding version of the Privacy Policy, please see [Li8 Fashion Privacy Policy_CA_2021.12.16.pdf] ; if
+                    you would like to know the specific amendments and changes made from the preceding version of the
+                    current version, effective May 16, 2022, please review the comparison between the preceding Privacy
+                    Policy versus the current Privacy Policy at [CA Li8 Fashion PRIVACY POLICY _redline comparison between
+                    preceding Policy VS current Policy.pdf] .
+                    <br><br><br>
+                    8)<span class="bold"> Errors:</span> While we strive to provide accurate information on the Website
+                    and Apps, typographical errors, inaccuracies, or omissions that relate to pricing, product
+                    descriptions, availability, and offers may occur. Subject to applicable law, we reserve the right to
+                    correct any errors, inaccuracies, or omissions and to change or modify information or cancel orders
+                    if any information on the Website or the Apps is inaccurate at any time without prior notice,
+                    including after your order has been submitted.
+                    <br><br><br>
+                    9)<span class="bold"> Purchases: </span>All product prices listed on the Site or on the Apps are
+                    exclusive of shipping charges and any goods and sales tax, provincial sales tax, harmonized sales
+                    tax, and other taxes or fees (where applicable), which will be charged to you separately at the
+                    applicable rate on each order.
+                    Prices may change at any time, but (other than as set out above under Section 4, "Errors") changes
+                    shall not affect the orders for which we have sent an Order Confirmation. All amounts are in
+                    Canadian dollars unless otherwise noted on the Site or in the App.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Online Shopping</h3>
+                        <ul>
+                            <li><a href="../pages/men.html">Men</a></li>
+                            <li><a href="../pages/women.html">Women</a></li>
+                            <li><a href="../pages/kids.html">Kids</a></li>
+                            <li><a href="../pages/accessories.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>HELP & SUPPORT</h3>
+                        <ul>
+                            <li><a href="../pages/about.html">About Us</a></li>
+                            <li><a href="../pages/contactus.html">Contact Us</a></li>
+                            <li><a href="../pages/faq.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Shop With Us</h3>
+                        <ul>
+                            <li><a href="../pages/term&condition.html">Terms & Conditions</a></li>
+                            <li><a href="../pages/sale.html">Offers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#"><i class="icon ion-social-facebook" id="social-icon"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter" id="social-icon"></i></a>
+                        <a href="#"><i class="icon ion-social-snapchat" id="social-icon"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram" id="social-icon"></i></a>
+                    </div>
+                    <p style="color: saddlebrown; clear:both;">&copy; 2023 www.li8.com. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Boy's Fashion</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/products_page.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/f40de700d8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../index.html" style="height: 75px">
+          <img
+            src="../assets/images/fashion_logo.png"
+            alt="Fashion_logo"
+            style="height: 75px"
+          />
+        </a>
+        <h1>LI8 FASHION</h1>
+      </div>
+
+      <div class="menu">
+        <li><a href="../pages/men.html">MEN</a></li>
+        <li><a href="../pages/women.html">WOMEN</a></li>
+        <li><a href="../pages/kids.html">KIDS</a></li>
+        <li><a href="../pages/accessories.html">ACCESSORIES</a></li>
+      </div>
+
+      <div class="search-box">
+        <form action="">
+          <input
+            type="text"
+            placeholder="Find your fashion"
+            name="search-box"
+          />
+          <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </form>
+      </div>
+
+      <div class="buttons">
+        <div class="dropdown">
+          <button
+            class="dropdown-btn"
+            onclick="toggleDropdown('profileDropdown')"
+          >
+            <i class="fa-solid fa-user"></i>
+          </button>
+
+          <div id="profileDropdown" class="dropdown-content">
+            <a href="../pages/signup.html"
+              ><i class="fa fa-user-plus"></i> &nbspSign Up</a
+            >
+            <!-- <a href="../pages/login.html"
+            ><i class="fa fa-sign-in"></i> &nbspLogin</a
+          > -->
+          </div>
+        </div>
+        <button type="button">
+          <a href="../pages/wishlist.html" style="color: white"
+            ><i class="fa fa-heart"></i
+          ></a>
+        </button>
+        <button type="button">
+          <a href="../pages/cart.html" style="color: white"
+            ><i class="fa fa-shopping-cart"></i
+          ></a>
+        </button>
+      </div>
+    </nav>
+
+    <div id="sorting">
+      <select class="filter" id="brandFilter">
+        <option id="normal" value="all">FILTER BY BRAND</option>
+        <option value="Nyk">Nyk</option>
+        <option value="Hugo">Hugo</option>
+        <option value="Smartoe">Smartoe</option>
+        <option value="Bulchee">Bulchee</option>
+        <option value="Allen">Allen</option>
+        <option value="Disney">Disney</option>
+        <option value="Opium">Opium</option>
+        <option value="Basics">Basics</option>
+        <option value="Asics">Asics</option>
+        <option value="Folklore">Folklore</option>
+        <option value="Morellato">Morellato</option>
+        <option value="Carlton">Carlton</option>
+        <option value="Ray-Ban">Ray-Ban</option>
+        <option value="Timex">Timex</option>
+        <option value="Levis">Levis</option>
+        <option value="Guess">Guess</option>
+        <option value="ID">ID</option>
+        <option value="Ganuchi">Ganuchi</option>
+        <option value="Inaya">Inaya</option>
+        <option value="Kipsta">Kipsta</option>
+        <option value="Ponds">Ponds</option>
+        <option value="Pitaraa">Pitaraa</option>
+        <option value="Pepe">Pepe</option>
+        <option value="GAS">GAS</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Undercolors">Undercolors</option>
+        <option value="Casio">Casio</option>
+        <option value="Kraus">Kraus</option>
+        <option value="Little">Little</option>
+        <option value="Span">Span</option>
+        <option value="Murcia">Murcia</option>
+        <option value="Coolers">Coolers</option>
+        <option value="Indian">Indian</option>
+        <option value="Kylie">Kylie</option>
+        <option value="Kids">Kids</option>
+        <option value="ALayna">ALayna</option>
+        <option value="Stoln">Stoln</option>
+        <option value="Peri">Peri</option>
+        <option value="Hakashi">Hakashi</option>
+        <option value="Timberland">Timberland</option>
+        <option value="Satya">Satya</option>
+        <option value="Jacques">Jacques</option>
+        <option value="Belmonte">Belmonte</option>
+        <option value="Q&Q">Q&Q</option>
+        <option value="Esprit">Esprit</option>
+        <option value="Red">Red</option>
+        <option value="Fastrack">Fastrack</option>
+        <option value="Jungle">Jungle</option>
+        <option value="109F">109F</option>
+        <option value="Wild">Wild</option>
+        <option value="Police">Police</option>
+        <option value="Hannah">Hannah</option>
+        <option value="F">F</option>
+        <option value="Rocia">Rocia</option>
+        <option value="Valentino">Valentino</option>
+        <option value="Gini">Gini</option>
+        <option value="Proline">Proline</option>
+        <option value="Levitate">Levitate</option>
+        <option value="Highlander">Highlander</option>
+        <option value="Aurelia">Aurelia</option>
+        <option value="Royal">Royal</option>
+        <option value="Park">Park</option>
+        <option value="Idee">Idee</option>
+        <option value="Barbie">Barbie</option>
+        <option value="Nautica">Nautica</option>
+        <option value="Colour">Colour</option>
+        <option value="Oakley">Oakley</option>
+        <option value="Being">Being</option>
+        <option value="Clarks">Clarks</option>
+        <option value="Numero">Numero</option>
+        <option value="Be">Be</option>
+        <option value="Inc.">Inc.</option>
+        <option value="Lovable">Lovable</option>
+        <option value="Levi's">Levi's</option>
+        <option value="Quechua">Quechua</option>
+        <option value="FILA">FILA</option>
+        <option value="John">John</option>
+        <option value="Jimi">Jimi</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Fila">Fila</option>
+        <option value="Warner">Warner</option>
+        <option value="Aspen">Aspen</option>
+        <option value="Angry">Angry</option>
+        <option value="Shree">Shree</option>
+        <option value="W">W</option>
+        <option value="Grendha">Grendha</option>
+        <option value="Probase">Probase</option>
+        <option value="Quiksilver">Quiksilver</option>
+        <option value="Femella">Femella</option>
+        <option value="Senorita">Senorita</option>
+        <option value="Kama">Kama</option>
+        <option value="Miss">Miss</option>
+        <option value="Doodle">Doodle</option>
+        <option value="DUSG">DUSG</option>
+        <option value="Kiara">Kiara</option>
+        <option value="Miki">Miki</option>
+        <option value="Puma">Puma</option>
+        <option value="Titan">Titan</option>
+        <option value="Batman">Batman</option>
+        <option value="Colorbar">Colorbar</option>
+        <option value="Enamor">Enamor</option>
+        <option value="Chromozome">Chromozome</option>
+        <option value="Maxima">Maxima</option>
+        <option value="Louis">Louis</option>
+        <option value="Kalenji">Kalenji</option>
+        <option value="Streetwear">Streetwear</option>
+        <option value="Skagen">Skagen</option>
+        <option value="Hush">Hush</option>
+        <option value="Lakme">Lakme</option>
+        <option value="Decathlon">Decathlon</option>
+        <option value="U.S.">U.S.</option>
+        <option value="Newhide">Newhide</option>
+        <option value="CSK">CSK</option>
+        <option value="Myntra">Myntra</option>
+        <option value="Facit">Facit</option>
+        <option value="Domyos">Domyos</option>
+        <option value="Biba">Biba</option>
+        <option value="Pieces">Pieces</option>
+        <option value="Love">Love</option>
+        <option value="Avirate">Avirate</option>
+        <option value="Inkfruit">Inkfruit</option>
+        <option value="Playboy">Playboy</option>
+        <option value="Revv">Revv</option>
+        <option value="Beatles">Beatles</option>
+        <option value="Catwalk">Catwalk</option>
+        <option value="Envirosax">Envirosax</option>
+        <option value="Biotique">Biotique</option>
+        <option value="Gas">Gas</option>
+        <option value="Lotus">Lotus</option>
+        <option value="Buckaroo">Buckaroo</option>
+        <option value="Reid">Reid</option>
+        <option value="Spalding">Spalding</option>
+        <option value="Kochi">Kochi</option>
+        <option value="RCB">RCB</option>
+        <option value="Wildcraft">Wildcraft</option>
+        <option value="Yelloe">Yelloe</option>
+        <option value="Arrow">Arrow</option>
+        <option value="Franco">Franco</option>
+        <option value="Amante">Amante</option>
+        <option value="Rasasi">Rasasi</option>
+        <option value="Helix">Helix</option>
+        <option value="Mineral">Mineral</option>
+        <option value="JAG">JAG</option>
+        <option value="Bulgari">Bulgari</option>
+        <option value="UCB">UCB</option>
+        <option value="Billy">Billy</option>
+        <option value="NA">NA</option>
+        <option value="ASICS">ASICS</option>
+        <option value="Revlon">Revlon</option>
+        <option value="Heart">Heart</option>
+        <option value="United">United</option>
+        <option value="Giordano">Giordano</option>
+        <option value="Reebok">Reebok</option>
+        <option value="Adrika">Adrika</option>
+        <option value="BIBA">BIBA</option>
+        <option value="Roxy">Roxy</option>
+        <option value="Vishudh">Vishudh</option>
+        <option value="Artengo">Artengo</option>
+        <option value="4711">4711</option>
+        <option value="Olay">Olay</option>
+        <option value="Fabindia">Fabindia</option>
+        <option value="Windsor">Windsor</option>
+        <option value="Lucera">Lucera</option>
+        <option value="Rreverie">Rreverie</option>
+        <option value="Tantra">Tantra</option>
+        <option value="Cat">Cat</option>
+        <option value="Mr.">Mr.</option>
+        <option value="Manchester">Manchester</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Woodland">Woodland</option>
+        <option value="Image">Image</option>
+        <option value="Davidoff">Davidoff</option>
+        <option value="Hop">Hop</option>
+        <option value="Fusion">Fusion</option>
+        <option value="Cobblerz">Cobblerz</option>
+        <option value="Deni">Deni</option>
+        <option value="Van">Van</option>
+        <option value="Crusoe">Crusoe</option>
+        <option value="Hanes">Hanes</option>
+        <option value="Vans">Vans</option>
+        <option value="C">C</option>
+        <option value="Solognac">Solognac</option>
+        <option value="Aramis">Aramis</option>
+        <option value="Backpackgit">Backpackgit</option>
+        <option value="Enroute">Enroute</option>
+        <option value="Pond's">Pond's</option>
+        <option value="Sushilas">Sushilas</option>
+        <option value="Denizen">Denizen</option>
+        <option value="Estelle">Estelle</option>
+        <option value="Locomotive">Locomotive</option>
+        <option value="Baggit">Baggit</option>
+        <option value="18+">18+</option>
+        <option value="Jealous">Jealous</option>
+        <option value="Ed">Ed</option>
+        <option value="KKR">KKR</option>
+        <option value="French">French</option>
+        <option value="Genesis">Genesis</option>
+        <option value="Ivory">Ivory</option>
+        <option value="Ant">Ant</option>
+        <option value="FCUK">FCUK</option>
+        <option value="Deborah">Deborah</option>
+        <option value="Mickey">Mickey</option>
+        <option value="Cabarelli">Cabarelli</option>
+        <option value="Just">Just</option>
+        <option value="Jockey">Jockey</option>
+        <option value="Boss">Boss</option>
+        <option value="Sepia">Sepia</option>
+        <option value="s.Oliver">s.Oliver</option>
+        <option value="Citizen">Citizen</option>
+        <option value="Cavallini">Cavallini</option>
+        <option value="Lencia">Lencia</option>
+        <option value="ToniQ">ToniQ</option>
+        <option value="Lee">Lee</option>
+        <option value="Rocky">Rocky</option>
+        <option value="Spykar">Spykar</option>
+        <option value="Miss-T">Miss-T</option>
+        <option value="Status">Status</option>
+        <option value="Baldessarini">Baldessarini</option>
+        <option value="Globalite">Globalite</option>
+        <option value="American">American</option>
+        <option value="Spinn">Spinn</option>
+        <option value="Visudh">Visudh</option>
+        <option value="Forever">Forever</option>
+        <option value="Portia">Portia</option>
+        <option value="Chhota">Chhota</option>
+        <option value="Do">Do</option>
+        <option value="Crocs">Crocs</option>
+        <option value="DC">DC</option>
+        <option value="Wrangler">Wrangler</option>
+        <option value="Alma">Alma</option>
+        <option value="Converse">Converse</option>
+        <option value="Mark">Mark</option>
+        <option value="Peter">Peter</option>
+        <option value="Paris">Paris</option>
+        <option value="DKNY">DKNY</option>
+        <option value="Raymond">Raymond</option>
+        <option value="Gatsby">Gatsby</option>
+        <option value="iPanema">iPanema</option>
+        <option value="PUMA">PUMA</option>
+        <option value="ADIDAS">ADIDAS</option>
+        <option value="Classic">Classic</option>
+        <option value="Dunhill">Dunhill</option>
+        <option value="Provogue">Provogue</option>
+        <option value="YARDLEY">YARDLEY</option>
+        <option value="Scullers">Scullers</option>
+        <option value="Hidekraft">Hidekraft</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Urban">Urban</option>
+        <option value="Flying">Flying</option>
+        <option value="Tiptopp">Tiptopp</option>
+        <option value="HM">HM</option>
+        <option value="Mother">Mother</option>
+        <option value="Estd.">Estd.</option>
+        <option value="Indigo">Indigo</option>
+        <option value="Spice">Spice</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Turtle">Turtle</option>
+        <option value="Superman">Superman</option>
+        <option value="Carrera">Carrera</option>
+        <option value="Estee">Estee</option>
+        <option value="Fossil">Fossil</option>
+        <option value="Force">Force</option>
+        <option value="Palm">Palm</option>
+        <option value="Lino">Lino</option>
+        <option value="Biara">Biara</option>
+        <option value="Skechers">Skechers</option>
+        <option value="ONLY">ONLY</option>
+        <option value="Kenneth">Kenneth</option>
+        <option value="ColorBar">ColorBar</option>
+        <option value="Celine">Celine</option>
+        <option value="Parx">Parx</option>
+        <option value="Latin">Latin</option>
+        <option value="Garfield">Garfield</option>
+        <option value="New">New</option>
+        <option value="Ben">Ben</option>
+        <option value="Aneri">Aneri</option>
+        <option value="Mod-acc">Mod-acc</option>
+        <option value="Tabac">Tabac</option>
+        <option value="Marvel">Marvel</option>
+        <option value="Miami">Miami</option>
+        <option value="Global">Global</option>
+        <option value="Wills">Wills</option>
+        <option value="Redtape">Redtape</option>
+        <option value="Diva">Diva</option>
+        <option value="CASIO">CASIO</option>
+        <option value="Bwitch">Bwitch</option>
+        <option value="SDL">SDL</option>
+        <option value="Polaroid">Polaroid</option>
+        <option value="Beyouty">Beyouty</option>
+        <option value="Vero">Vero</option>
+        <option value="SKAGEN">SKAGEN</option>
+        <option value="Saint">Saint</option>
+        <option value="Salomon">Salomon</option>
+        <option value="Elle">Elle</option>
+        <option value="M">M</option>
+        <option value="Black">Black</option>
+        <option value="Mr.Men">Mr.Men</option>
+        <option value="OTLS">OTLS</option>
+        <option value="Avengers">Avengers</option>
+        <option value="Giny">Giny</option>
+        <option value="Lotto">Lotto</option>
+        <option value="Nike">Nike</option>
+        <option value="Rockport">Rockport</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="York">York</option>
+        <option value="Free">Free</option>
+        <option value="The">The</option>
+        <option value="Gliders">Gliders</option>
+        <option value="Remanika">Remanika</option>
+        <option value="Mayhem">Mayhem</option>
+        <option value="Madagascar3">Madagascar3</option>
+        <option value="La-Emotio">La-Emotio</option>
+        <option value="Prafful">Prafful</option>
+        <option value="Campbell">Campbell</option>
+        <option value="Giorgio">Giorgio</option>
+        <option value="FNF">FNF</option>
+        <option value="Mtv">Mtv</option>
+        <option value="ANT">ANT</option>
+      </select>
+
+      <select class="filter" id="priceSort">
+        <option value="---">SORT BY PRICE</option>
+        <option value="lth">Low → High</option>
+        <option value="htl">High → Low</option>
+      </select>
+
+      <select class="filter" id="nameSort">
+        <option value="---">SORT BY NAME</option>
+        <option value="asc">Ascending</option>
+        <option value="dsc">Descending</option>
+      </select>
+    </div>
+
+    <div id="wrapper">
+      <div id="filter">
+        <div class="a">
+          <h3>FILTERS</h3>
+          <div>
+            <input type="radio" id="men" name="group" />
+            <label for="men">Men</label><br />
+            <input type="radio" id="women" name="group" />
+            <label for="women">Women</label><br />
+            <input type="radio" id="boys" name="group" />
+            <label for="boys">Boys</label><br />
+            <input type="radio" id="girls" name="group" />
+            <label for="girls">Girls</label>
+          </div>
+        </div>
+        <div class="b">
+          <h3>CATEGORIES</h3>
+          <div>
+            <input type="checkbox" id="Shirts" name="Shirts" />
+            <label for="Shirts">Shirts</label><br />
+
+            <input type="checkbox" id="Jeans" name="Jeans" />
+            <label for="Jeans">Jeans</label><br />
+
+            <input type="checkbox" id="Tshirts" name="Tshirts" />
+            <label for="Tshirts">Tshirts</label><br />
+
+            <input type="checkbox" id="Watches" name="Watches" />
+            <label for="Watches">Watches</label><br />
+
+            <input type="checkbox" id="Belts" name="Belts" />
+            <label for="Belts">Belts</label><br />
+
+            <input type="checkbox" id="Sports Shoes" name="Sports Shoes" />
+            <label for="Sports Shoes">Sports Shoes</label><br />
+
+            <input type="checkbox" id="Casual Shoes" name="Casual Shoes" />
+            <label for="Casual Shoes">Casual Shoes</label><br />
+
+            <input type="checkbox" id="Shorts" name="Shorts" />
+            <label for="Shorts">Shorts</label><br />
+
+            <input type="checkbox" id="Flip Flops" name="Flip Flops" />
+            <label for="Flip Flops">Flip Flops</label><br />
+
+            <input type="checkbox" id="Sweatshirts" name="Sweatshirts" />
+            <label for="Sweatshirts">Sweatshirts</label><br />
+
+            <input type="checkbox" id="Briefs" name="Briefs" />
+            <label for="Briefs">Briefs</label><br />
+
+            <input type="checkbox" id="Bracelet" name="Bracelet" />
+            <label for="Bracelet">Bracelet</label><br />
+
+            <input type="checkbox" id="Caps" name="Caps" />
+            <label for="Caps">Caps</label><br />
+
+            <input
+              type="checkbox"
+              id="Innerwear Vests"
+              name="Innerwear Vests"
+            />
+            <label for="Innerwear Vests">Innerwear Vests</label><br />
+
+            <input type="checkbox" id="Deodorant" name="Deodorant" />
+            <label for="Deodorant">Deodorant</label><br />
+
+            <input type="checkbox" id="Formal Shoes" name="Formal Shoes" />
+            <label for="Formal Shoes">Formal Shoes</label><br />
+
+            <input type="checkbox" id="Track Pants" name="Track Pants" />
+            <label for="Track Pants">Track Pants</label><br />
+
+            <input type="checkbox" id="Sandals" name="Sandals" />
+            <label for="Sandals">Sandals</label><br />
+
+            <input type="checkbox" id="Sunglasses" name="Sunglasses" />
+            <label for="Sunglasses">Sunglasses</label><br />
+
+            <input type="checkbox" id="Tracksuits" name="Tracksuits" />
+            <label for="Tracksuits">Tracksuits</label><br />
+
+            <input type="checkbox" id="Trousers" name="Trousers" />
+            <label for="Trousers">Trousers</label><br />
+
+            <input type="checkbox" id="Jackets" name="Jackets" />
+            <label for="Jackets">Jackets</label><br />
+
+            <input type="checkbox" id="Ties" name="Ties" />
+            <label for="Ties">Ties</label><br />
+
+            <input type="checkbox" id="Sweaters" name="Sweaters" />
+            <label for="Sweaters">Sweaters</label><br />
+
+            <input type="checkbox" id="Night suits" name="Night suits" />
+            <label for="Night suits">Night suits</label><br />
+
+            <input type="checkbox" id="Trunk" name="Trunk" />
+            <label for="Trunk">Trunk</label><br />
+
+            <input type="checkbox" id="Wallets" name="Wallets" />
+            <label for="Wallets">Wallets</label><br />
+
+            <input type="checkbox" id="Free Gifts" name="Free Gifts" />
+            <label for="Free Gifts">Free Gifts</label><br />
+
+            <input type="checkbox" id="Socks" name="Socks" />
+            <label for="Socks">Socks</label><br />
+
+            <input type="checkbox" id="Scarves" name="Scarves" />
+            <label for="Scarves">Scarves</label><br />
+
+            <input type="checkbox" id="Suspenders" name="Suspenders" />
+            <label for="Suspenders">Suspenders</label><br />
+
+            <input type="checkbox" id="Sports Sandals" name="Sports Sandals" />
+            <label for="Sports Sandals">Sports Sandals</label><br />
+
+            <input type="checkbox" id="Boxers" name="Boxers" />
+            <label for="Boxers">Boxers</label><br />
+
+            <input type="checkbox" id="Kurtas" name="Kurtas" />
+            <label for="Kurtas">Kurtas</label><br />
+
+            <input type="checkbox" id="Lounge Pants" name="Lounge Pants" />
+            <label for="Lounge Pants">Lounge Pants</label><br />
+
+            <input
+              type="checkbox"
+              id="Accessory Gift Set"
+              name="Accessory Gift Set"
+            />
+            <label for="Accessory Gift Set">Accessory Gift Set</label><br />
+
+            <input
+              type="checkbox"
+              id="Fragrance Gift Set"
+              name="Fragrance Gift Set"
+            />
+            <label for="Fragrance Gift Set">Fragrance Gift Set</label><br />
+
+            <input type="checkbox" id="Backpacks" name="Backpacks" />
+            <label for="Backpacks">Backpacks</label><br />
+
+            <input type="checkbox" id="Mufflers" name="Mufflers" />
+            <label for="Mufflers">Mufflers</label><br />
+
+            <input type="checkbox" id="Laptop Bag" name="Laptop Bag" />
+            <label for="Laptop Bag">Laptop Bag</label><br />
+
+            <input type="checkbox" id="Lounge Shorts" name="Lounge Shorts" />
+            <label for="Lounge Shorts">Lounge Shorts</label><br />
+
+            <input type="checkbox" id="Cufflinks" name="Cufflinks" />
+            <label for="Cufflinks">Cufflinks</label><br />
+
+            <input type="checkbox" id="Pendant" name="Pendant" />
+            <label for="Pendant">Pendant</label><br />
+
+            <input type="checkbox" id="Sunscreen" name="Sunscreen" />
+            <label for="Sunscreen">Sunscreen</label><br />
+
+            <input type="checkbox" id="Messenger Bag" name="Messenger Bag" />
+            <label for="Messenger Bag">Messenger Bag</label><br />
+
+            <input type="checkbox" id="Water Bottle" name="Water Bottle" />
+            <label for="Water Bottle">Water Bottle</label><br />
+
+            <input type="checkbox" id="Churidar" name="Churidar" />
+            <label for="Churidar">Churidar</label><br />
+
+            <input type="checkbox" id="Duffel Bag" name="Duffel Bag" />
+            <label for="Duffel Bag">Duffel Bag</label><br />
+
+            <input type="checkbox" id="Nehru Jackets" name="Nehru Jackets" />
+            <label for="Nehru Jackets">Nehru Jackets</label><br />
+
+            <input type="checkbox" id="Gloves" name="Gloves" />
+            <label for="Gloves">Gloves</label><br />
+
+            <input type="checkbox" id="Ring" name="Ring" />
+            <label for="Ring">Ring</label><br />
+
+            <input type="checkbox" id="Waistcoat" name="Waistcoat" />
+            <label for="Waistcoat">Waistcoat</label><br />
+
+            <input type="checkbox" id="Blazers" name="Blazers" />
+            <label for="Blazers">Blazers</label><br />
+
+            <input type="checkbox" id="Handbags" name="Handbags" />
+            <label for="Handbags">Handbags</label><br />
+
+            <input type="checkbox" id="Tights" name="Tights" />
+            <label for="Tights">Tights</label><br />
+
+            <input type="checkbox" id="Rain Trousers" name="Rain Trousers" />
+            <label for="Rain Trousers">Rain Trousers</label><br />
+
+            <input
+              type="checkbox"
+              id="Shoe Accessories"
+              name="Shoe Accessories"
+            />
+            <label for="Shoe Accessories">Shoe Accessories</label><br />
+          </div>
+        </div>
+        <!-- <div class="b">
+          <h3>BRAND</h3>
+          <div>
+            <input type="checkbox" id="Nyk" name="Nyk">
+<label for="Nyk">Nyk</label><br />
+
+<input type="checkbox" id="Hugo" name="Hugo">
+<label for="Hugo">Hugo</label><br />
+
+<input type="checkbox" id="Smartoe" name="Smartoe">
+<label for="Smartoe">Smartoe</label><br />
+
+<input type="checkbox" id="Bulchee" name="Bulchee">
+<label for="Bulchee">Bulchee</label><br />
+
+<input type="checkbox" id="Allen" name="Allen">
+<label for="Allen">Allen</label><br />
+
+<input type="checkbox" id="Disney" name="Disney">
+<label for="Disney">Disney</label><br />
+
+<input type="checkbox" id="Opium" name="Opium">
+<label for="Opium">Opium</label><br />
+
+<input type="checkbox" id="Basics" name="Basics">
+<label for="Basics">Basics</label><br />
+
+<input type="checkbox" id="Asics" name="Asics">
+<label for="Asics">Asics</label><br />
+
+<input type="checkbox" id="Folklore" name="Folklore">
+<label for="Folklore">Folklore</label><br />
+
+<input type="checkbox" id="Morellato" name="Morellato">
+<label for="Morellato">Morellato</label><br />
+
+<input type="checkbox" id="Carlton" name="Carlton">
+<label for="Carlton">Carlton</label><br />
+
+<input type="checkbox" id="Ray-Ban" name="Ray-Ban">
+<label for="Ray-Ban">Ray-Ban</label><br />
+
+<input type="checkbox" id="Timex" name="Timex">
+<label for="Timex">Timex</label><br />
+
+<input type="checkbox" id="Levis" name="Levis">
+<label for="Levis">Levis</label><br />
+
+<input type="checkbox" id="Guess" name="Guess">
+<label for="Guess">Guess</label><br />
+
+<input type="checkbox" id="ID" name="ID">
+<label for="ID">ID</label><br />
+
+<input type="checkbox" id="Ganuchi" name="Ganuchi">
+<label for="Ganuchi">Ganuchi</label><br />
+
+<input type="checkbox" id="Inaya" name="Inaya">
+<label for="Inaya">Inaya</label><br />
+
+<input type="checkbox" id="Kipsta" name="Kipsta">
+<label for="Kipsta">Kipsta</label><br />
+
+<input type="checkbox" id="Ponds" name="Ponds">
+<label for="Ponds">Ponds</label><br />
+
+<input type="checkbox" id="Pitaraa" name="Pitaraa">
+<label for="Pitaraa">Pitaraa</label><br />
+
+<input type="checkbox" id="Pepe" name="Pepe">
+<label for="Pepe">Pepe</label><br />
+
+<input type="checkbox" id="GAS" name="GAS">
+<label for="GAS">GAS</label><br />
+
+<input type="checkbox" id="Madagascar" name="Madagascar">
+<label for="Madagascar">Madagascar</label><br />
+
+<input type="checkbox" id="Undercolors" name="Undercolors">
+<label for="Undercolors">Undercolors</label><br />
+
+<input type="checkbox" id="Casio" name="Casio">
+<label for="Casio">Casio</label><br />
+
+<input type="checkbox" id="Kraus" name="Kraus">
+<label for="Kraus">Kraus</label><br />
+
+<input type="checkbox" id="Little" name="Little">
+<label for="Little">Little</label><br />
+
+<input type="checkbox" id="Span" name="Span">
+<label for="Span">Span</label><br />
+
+<input type="checkbox" id="Murcia" name="Murcia">
+<label for="Murcia">Murcia</label><br />
+
+<input type="checkbox" id="Coolers" name="Coolers">
+<label for="Coolers">Coolers</label><br />
+
+<input type="checkbox" id="Indian" name="Indian">
+<label for="Indian">Indian</label><br />
+
+<input type="checkbox" id="Kylie" name="Kylie">
+<label for="Kylie">Kylie</label><br />
+
+<input type="checkbox" id="Kids" name="Kids">
+<label for="Kids">Kids</label><br />
+
+<input type="checkbox" id="ALayna" name="ALayna">
+<label for="ALayna">ALayna</label><br />
+
+<input type="checkbox" id="Stoln" name="Stoln">
+<label for="Stoln">Stoln</label><br />
+
+<input type="checkbox" id="Peri" name="Peri">
+<label for="Peri">Peri</label><br />
+
+<input type="checkbox" id="Hakashi" name="Hakashi">
+<label for="Hakashi">Hakashi</label><br />
+
+<input type="checkbox" id="Timberland" name="Timberland">
+<label for="Timberland">Timberland</label><br />
+
+<input type="checkbox" id="Satya" name="Satya">
+<label for="Satya">Satya</label><br />
+
+<input type="checkbox" id="Jacques" name="Jacques">
+<label for="Jacques">Jacques</label><br />
+
+<input type="checkbox" id="Belmonte" name="Belmonte">
+<label for="Belmonte">Belmonte</label><br />
+
+<input type="checkbox" id="Q&Q" name="Q&Q">
+<label for="Q&Q">Q&Q</label><br />
+
+<input type="checkbox" id="Esprit" name="Esprit">
+<label for="Esprit">Esprit</label><br />
+
+<input type="checkbox" id="Red" name="Red">
+<label for="Red">Red</label><br />
+
+<input type="checkbox" id="Fastrack" name="Fastrack">
+<label for="Fastrack">Fastrack</label><br />
+
+<input type="checkbox" id="Jungle" name="Jungle">
+<label for="Jungle">Jungle</label><br />
+
+<input type="checkbox" id="109F" name="109F">
+<label for="109F">109F</label><br />
+
+<input type="checkbox" id="Wild" name="Wild">
+<label for="Wild">Wild</label><br />
+
+<input type="checkbox" id="Police" name="Police">
+<label for="Police">Police</label><br />
+
+<input type="checkbox" id="Hannah" name="Hannah">
+<label for="Hannah">Hannah</label><br />
+
+<input type="checkbox" id="F" name="F">
+<label for="F">F</label><br />
+
+<input type="checkbox" id="Rocia" name="Rocia">
+<label for="Rocia">Rocia</label><br />
+
+<input type="checkbox" id="Valentino" name="Valentino">
+<label for="Valentino">Valentino</label><br />
+
+<input type="checkbox" id="Gini" name="Gini">
+<label for="Gini">Gini</label><br />
+
+<input type="checkbox" id="Proline" name="Proline">
+<label for="Proline">Proline</label><br />
+
+<input type="checkbox" id="Levitate" name="Levitate">
+<label for="Levitate">Levitate</label><br />
+
+<input type="checkbox" id="Highlander" name="Highlander">
+<label for="Highlander">Highlander</label><br />
+
+<input type="checkbox" id="Aurelia" name="Aurelia">
+<label for="Aurelia">Aurelia</label><br />
+
+<input type="checkbox" id="Royal" name="Royal">
+<label for="Royal">Royal</label><br />
+
+<input type="checkbox" id="Park" name="Park">
+<label for="Park">Park</label><br />
+
+<input type="checkbox" id="Idee" name="Idee">
+<label for="Idee">Idee</label><br />
+
+<input type="checkbox" id="Barbie" name="Barbie">
+<label for="Barbie">Barbie</label><br />
+
+<input type="checkbox" id="Nautica" name="Nautica">
+<label for="Nautica">Nautica</label><br />
+
+<input type="checkbox" id="Colour" name="Colour">
+<label for="Colour">Colour</label><br />
+
+<input type="checkbox" id="Oakley" name="Oakley">
+<label for="Oakley">Oakley</label><br />
+
+<input type="checkbox" id="Being" name="Being">
+<label for="Being">Being</label><br />
+
+<input type="checkbox" id="Clarks" name="Clarks">
+<label for="Clarks">Clarks</label><br />
+
+<input type="checkbox" id="Numero" name="Numero">
+<label for="Numero">Numero</label><br />
+
+<input type="checkbox" id="Be" name="Be">
+<label for="Be">Be</label><br />
+
+<input type="checkbox" id="Inc." name="Inc.">
+<label for="Inc.">Inc.</label><br />
+
+<input type="checkbox" id="Lovable" name="Lovable">
+<label for="Lovable">Lovable</label><br />
+
+<input type="checkbox" id="Levi's" name="Levi's">
+<label for="Levi's">Levi's</label><br />
+
+<input type="checkbox" id="Quechua" name="Quechua">
+<label for="Quechua">Quechua</label><br />
+
+<input type="checkbox" id="FILA" name="FILA">
+<label for="FILA">FILA</label><br />
+
+<input type="checkbox" id="John" name="John">
+<label for="John">John</label><br />
+
+<input type="checkbox" id="Jimi" name="Jimi">
+<label for="Jimi">Jimi</label><br />
+
+<input type="checkbox" id="Jaguar" name="Jaguar">
+<label for="Jaguar">Jaguar</label><br />
+
+<input type="checkbox" id="Fila" name="Fila">
+<label for="Fila">Fila</label><br />
+
+<input type="checkbox" id="Warner" name="Warner">
+<label for="Warner">Warner</label><br />
+
+<input type="checkbox" id="Aspen" name="Aspen">
+<label for="Aspen">Aspen</label><br />
+
+<input type="checkbox" id="Angry" name="Angry">
+<label for="Angry">Angry</label><br />
+
+<input type="checkbox" id="Shree" name="Shree">
+<label for="Shree">Shree</label><br />
+
+<input type="checkbox" id="W" name="W">
+<label for="W">W</label><br />
+
+<input type="checkbox" id="Grendha" name="Grendha">
+<label for="Grendha">Grendha</label><br />
+
+<input type="checkbox" id="Probase" name="Probase">
+<label for="Probase">Probase</label><br />
+
+<input type="checkbox" id="Quiksilver" name="Quiksilver">
+<label for="Quiksilver">Quiksilver</label><br />
+
+<input type="checkbox" id="Femella" name="Femella">
+<label for="Femella">Femella</label><br />
+
+<input type="checkbox" id="Senorita" name="Senorita">
+<label for="Senorita">Senorita</label><br />
+
+<input type="checkbox" id="Kama" name="Kama">
+<label for="Kama">Kama</label><br />
+
+<input type="checkbox" id="Miss" name="Miss">
+<label for="Miss">Miss</label><br />
+
+<input type="checkbox" id="Doodle" name="Doodle">
+<label for="Doodle">Doodle</label><br />
+
+<input type="checkbox" id="DUSG" name="DUSG">
+<label for="DUSG">DUSG</label><br />
+
+<input type="checkbox" id="Kiara" name="Kiara">
+<label for="Kiara">Kiara</label><br />
+
+<input type="checkbox" id="Miki" name="Miki">
+<label for="Miki">Miki</label><br />
+
+<input type="checkbox" id="Puma" name="Puma">
+<label for="Puma">Puma</label><br />
+
+<input type="checkbox" id="Titan" name="Titan">
+<label for="Titan">Titan</label><br />
+
+<input type="checkbox" id="Batman" name="Batman">
+<label for="Batman">Batman</label><br />
+
+<input type="checkbox" id="Colorbar" name="Colorbar">
+<label for="Colorbar">Colorbar</label><br />
+
+<input type="checkbox" id="Enamor" name="Enamor">
+<label for="Enamor">Enamor</label><br />
+
+<input type="checkbox" id="Chromozome" name="Chromozome">
+<label for="Chromozome">Chromozome</label><br />
+
+<input type="checkbox" id="Maxima" name="Maxima">
+<label for="Maxima">Maxima</label><br />
+
+<input type="checkbox" id="Louis" name="Louis">
+<label for="Louis">Louis</label><br />
+
+<input type="checkbox" id="Kalenji" name="Kalenji">
+<label for="Kalenji">Kalenji</label><br />
+
+<input type="checkbox" id="Streetwear" name="Streetwear">
+<label for="Streetwear">Streetwear</label><br />
+
+<input type="checkbox" id="Skagen" name="Skagen">
+<label for="Skagen">Skagen</label><br />
+
+<input type="checkbox" id="Hush" name="Hush">
+<label for="Hush">Hush</label><br />
+
+<input type="checkbox" id="Lakme" name="Lakme">
+<label for="Lakme">Lakme</label><br />
+
+<input type="checkbox" id="Decathlon" name="Decathlon">
+<label for="Decathlon">Decathlon</label><br />
+
+<input type="checkbox" id="U.S." name="U.S.">
+<label for="U.S.">U.S.</label><br />
+
+<input type="checkbox" id="Newhide" name="Newhide">
+<label for="Newhide">Newhide</label><br />
+
+<input type="checkbox" id="CSK" name="CSK">
+<label for="CSK">CSK</label><br />
+
+<input type="checkbox" id="Myntra" name="Myntra">
+<label for="Myntra">Myntra</label><br />
+
+<input type="checkbox" id="Facit" name="Facit">
+<label for="Facit">Facit</label><br />
+
+<input type="checkbox" id="Domyos" name="Domyos">
+<label for="Domyos">Domyos</label><br />
+
+<input type="checkbox" id="Biba" name="Biba">
+<label for="Biba">Biba</label><br />
+
+<input type="checkbox" id="Pieces" name="Pieces">
+<label for="Pieces">Pieces</label><br />
+
+<input type="checkbox" id="Love" name="Love">
+<label for="Love">Love</label><br />
+
+<input type="checkbox" id="Avirate" name="Avirate">
+<label for="Avirate">Avirate</label><br />
+
+<input type="checkbox" id="Inkfruit" name="Inkfruit">
+<label for="Inkfruit">Inkfruit</label><br />
+
+<input type="checkbox" id="Playboy" name="Playboy">
+<label for="Playboy">Playboy</label><br />
+
+<input type="checkbox" id="Revv" name="Revv">
+<label for="Revv">Revv</label><br />
+
+<input type="checkbox" id="Beatles" name="Beatles">
+<label for="Beatles">Beatles</label><br />
+
+<input type="checkbox" id="Catwalk" name="Catwalk">
+<label for="Catwalk">Catwalk</label><br />
+
+<input type="checkbox" id="Envirosax" name="Envirosax">
+<label for="Envirosax">Envirosax</label><br />
+
+<input type="checkbox" id="Biotique" name="Biotique">
+<label for="Biotique">Biotique</label><br />
+
+<input type="checkbox" id="Gas" name="Gas">
+<label for="Gas">Gas</label><br />
+
+<input type="checkbox" id="Lotus" name="Lotus">
+<label for="Lotus">Lotus</label><br />
+
+<input type="checkbox" id="Buckaroo" name="Buckaroo">
+<label for="Buckaroo">Buckaroo</label><br />
+
+<input type="checkbox" id="Reid" name="Reid">
+<label for="Reid">Reid</label><br />
+
+<input type="checkbox" id="Spalding" name="Spalding">
+<label for="Spalding">Spalding</label><br />
+
+<input type="checkbox" id="Kochi" name="Kochi">
+<label for="Kochi">Kochi</label><br />
+
+<input type="checkbox" id="RCB" name="RCB">
+<label for="RCB">RCB</label><br />
+
+<input type="checkbox" id="Wildcraft" name="Wildcraft">
+<label for="Wildcraft">Wildcraft</label><br />
+
+<input type="checkbox" id="Yelloe" name="Yelloe">
+<label for="Yelloe">Yelloe</label><br />
+
+<input type="checkbox" id="Arrow" name="Arrow">
+<label for="Arrow">Arrow</label><br />
+
+<input type="checkbox" id="Franco" name="Franco">
+<label for="Franco">Franco</label><br />
+
+<input type="checkbox" id="Amante" name="Amante">
+<label for="Amante">Amante</label><br />
+
+<input type="checkbox" id="Rasasi" name="Rasasi">
+<label for="Rasasi">Rasasi</label><br />
+
+<input type="checkbox" id="Helix" name="Helix">
+<label for="Helix">Helix</label><br />
+
+<input type="checkbox" id="Mineral" name="Mineral">
+<label for="Mineral">Mineral</label><br />
+
+<input type="checkbox" id="JAG" name="JAG">
+<label for="JAG">JAG</label><br />
+
+<input type="checkbox" id="Bulgari" name="Bulgari">
+<label for="Bulgari">Bulgari</label><br />
+
+<input type="checkbox" id="UCB" name="UCB">
+<label for="UCB">UCB</label><br />
+
+<input type="checkbox" id="Billy" name="Billy">
+<label for="Billy">Billy</label><br />
+
+<input type="checkbox" id="NA" name="NA">
+<label for="NA">NA</label><br />
+
+<input type="checkbox" id="ASICS" name="ASICS">
+<label for="ASICS">ASICS</label><br />
+
+<input type="checkbox" id="Revlon" name="Revlon">
+<label for="Revlon">Revlon</label><br />
+
+<input type="checkbox" id="Heart" name="Heart">
+<label for="Heart">Heart</label><br />
+
+<input type="checkbox" id="United" name="United">
+<label for="United">United</label><br />
+
+<input type="checkbox" id="Giordano" name="Giordano">
+<label for="Giordano">Giordano</label><br />
+
+<input type="checkbox" id="Reebok" name="Reebok">
+<label for="Reebok">Reebok</label><br />
+
+<input type="checkbox" id="Adrika" name="Adrika">
+<label for="Adrika">Adrika</label><br />
+
+<input type="checkbox" id="BIBA" name="BIBA">
+<label for="BIBA">BIBA</label><br />
+
+<input type="checkbox" id="Roxy" name="Roxy">
+<label for="Roxy">Roxy</label><br />
+
+<input type="checkbox" id="Vishudh" name="Vishudh">
+<label for="Vishudh">Vishudh</label><br />
+
+<input type="checkbox" id="Artengo" name="Artengo">
+<label for="Artengo">Artengo</label><br />
+
+<input type="checkbox" id="4711" name="4711">
+<label for="4711">4711</label><br />
+
+<input type="checkbox" id="Olay" name="Olay">
+<label for="Olay">Olay</label><br />
+
+<input type="checkbox" id="Fabindia" name="Fabindia">
+<label for="Fabindia">Fabindia</label><br />
+
+<input type="checkbox" id="Windsor" name="Windsor">
+<label for="Windsor">Windsor</label><br />
+
+<input type="checkbox" id="Lucera" name="Lucera">
+<label for="Lucera">Lucera</label><br />
+
+<input type="checkbox" id="Rreverie" name="Rreverie">
+<label for="Rreverie">Rreverie</label><br />
+
+<input type="checkbox" id="Tantra" name="Tantra">
+<label for="Tantra">Tantra</label><br />
+
+<input type="checkbox" id="Cat" name="Cat">
+<label for="Cat">Cat</label><br />
+
+<input type="checkbox" id="Mr." name="Mr.">
+<label for="Mr.">Mr.</label><br />
+
+<input type="checkbox" id="Manchester" name="Manchester">
+<label for="Manchester">Manchester</label><br />
+
+<input type="checkbox" id="Tonga" name="Tonga">
+<label for="Tonga">Tonga</label><br />
+
+<input type="checkbox" id="Woodland" name="Woodland">
+<label for="Woodland">Woodland</label><br />
+
+<input type="checkbox" id="Image" name="Image">
+<label for="Image">Image</label><br />
+
+<input type="checkbox" id="Davidoff" name="Davidoff">
+<label for="Davidoff">Davidoff</label><br />
+
+<input type="checkbox" id="Hop" name="Hop">
+<label for="Hop">Hop</label><br />
+
+<input type="checkbox" id="Fusion" name="Fusion">
+<label for="Fusion">Fusion</label><br />
+
+<input type="checkbox" id="Cobblerz" name="Cobblerz">
+<label for="Cobblerz">Cobblerz</label><br />
+
+<input type="checkbox" id="Deni" name="Deni">
+<label for="Deni">Deni</label><br />
+
+<input type="checkbox" id="Van" name="Van">
+<label for="Van">Van</label><br />
+
+<input type="checkbox" id="Crusoe" name="Crusoe">
+<label for="Crusoe">Crusoe</label><br />
+
+<input type="checkbox" id="Hanes" name="Hanes">
+<label for="Hanes">Hanes</label><br />
+
+<input type="checkbox" id="Vans" name="Vans">
+<label for="Vans">Vans</label><br />
+
+<input type="checkbox" id="C" name="C">
+<label for="C">C</label><br />
+
+<input type="checkbox" id="Solognac" name="Solognac">
+<label for="Solognac">Solognac</label><br />
+
+<input type="checkbox" id="Aramis" name="Aramis">
+<label for="Aramis">Aramis</label><br />
+
+<input type="checkbox" id="Backpackgit" name="Backpackgit">
+<label for="Backpackgit">Backpackgit</label><br />
+
+<input type="checkbox" id="Enroute" name="Enroute">
+<label for="Enroute">Enroute</label><br />
+
+<input type="checkbox" id="Pond's" name="Pond's">
+<label for="Pond's">Pond's</label><br />
+
+<input type="checkbox" id="Sushilas" name="Sushilas">
+<label for="Sushilas">Sushilas</label><br />
+
+<input type="checkbox" id="Denizen" name="Denizen">
+<label for="Denizen">Denizen</label><br />
+
+<input type="checkbox" id="Estelle" name="Estelle">
+<label for="Estelle">Estelle</label><br />
+
+<input type="checkbox" id="Locomotive" name="Locomotive">
+<label for="Locomotive">Locomotive</label><br />
+
+<input type="checkbox" id="Baggit" name="Baggit">
+<label for="Baggit">Baggit</label><br />
+
+<input type="checkbox" id="18+" name="18+">
+<label for="18+">18+</label><br />
+
+<input type="checkbox" id="Jealous" name="Jealous">
+<label for="Jealous">Jealous</label><br />
+
+<input type="checkbox" id="Ed" name="Ed">
+<label for="Ed">Ed</label><br />
+
+<input type="checkbox" id="KKR" name="KKR">
+<label for="KKR">KKR</label><br />
+
+<input type="checkbox" id="French" name="French">
+<label for="French">French</label><br />
+
+<input type="checkbox" id="Genesis" name="Genesis">
+<label for="Genesis">Genesis</label><br />
+
+<input type="checkbox" id="Ivory" name="Ivory">
+<label for="Ivory">Ivory</label><br />
+
+<input type="checkbox" id="Ant" name="Ant">
+<label for="Ant">Ant</label><br />
+
+<input type="checkbox" id="FCUK" name="FCUK">
+<label for="FCUK">FCUK</label><br />
+
+<input type="checkbox" id="Deborah" name="Deborah">
+<label for="Deborah">Deborah</label><br />
+
+<input type="checkbox" id="Mickey" name="Mickey">
+<label for="Mickey">Mickey</label><br />
+
+<input type="checkbox" id="Cabarelli" name="Cabarelli">
+<label for="Cabarelli">Cabarelli</label><br />
+
+<input type="checkbox" id="Just" name="Just">
+<label for="Just">Just</label><br />
+
+<input type="checkbox" id="Jockey" name="Jockey">
+<label for="Jockey">Jockey</label><br />
+
+<input type="checkbox" id="Boss" name="Boss">
+<label for="Boss">Boss</label><br />
+
+<input type="checkbox" id="Sepia" name="Sepia">
+<label for="Sepia">Sepia</label><br />
+
+<input type="checkbox" id="s.Oliver" name="s.Oliver">
+<label for="s.Oliver">s.Oliver</label><br />
+
+<input type="checkbox" id="Citizen" name="Citizen">
+<label for="Citizen">Citizen</label><br />
+
+<input type="checkbox" id="Cavallini" name="Cavallini">
+<label for="Cavallini">Cavallini</label><br />
+
+<input type="checkbox" id="Lencia" name="Lencia">
+<label for="Lencia">Lencia</label><br />
+
+<input type="checkbox" id="ToniQ" name="ToniQ">
+<label for="ToniQ">ToniQ</label><br />
+
+<input type="checkbox" id="Lee" name="Lee">
+<label for="Lee">Lee</label><br />
+
+<input type="checkbox" id="Rocky" name="Rocky">
+<label for="Rocky">Rocky</label><br />
+
+<input type="checkbox" id="Spykar" name="Spykar">
+<label for="Spykar">Spykar</label><br />
+
+<input type="checkbox" id="Miss-T" name="Miss-T">
+<label for="Miss-T">Miss-T</label><br />
+
+<input type="checkbox" id="Status" name="Status">
+<label for="Status">Status</label><br />
+
+<input type="checkbox" id="Baldessarini" name="Baldessarini">
+<label for="Baldessarini">Baldessarini</label><br />
+
+<input type="checkbox" id="Globalite" name="Globalite">
+<label for="Globalite">Globalite</label><br />
+
+<input type="checkbox" id="American" name="American">
+<label for="American">American</label><br />
+
+<input type="checkbox" id="Spinn" name="Spinn">
+<label for="Spinn">Spinn</label><br />
+
+<input type="checkbox" id="Visudh" name="Visudh">
+<label for="Visudh">Visudh</label><br />
+
+<input type="checkbox" id="Forever" name="Forever">
+<label for="Forever">Forever</label><br />
+
+<input type="checkbox" id="Portia" name="Portia">
+<label for="Portia">Portia</label><br />
+
+<input type="checkbox" id="Chhota" name="Chhota">
+<label for="Chhota">Chhota</label><br />
+
+<input type="checkbox" id="Do" name="Do">
+<label for="Do">Do</label><br />
+
+<input type="checkbox" id="Crocs" name="Crocs">
+<label for="Crocs">Crocs</label><br />
+
+<input type="checkbox" id="DC" name="DC">
+<label for="DC">DC</label><br />
+
+<input type="checkbox" id="Wrangler" name="Wrangler">
+<label for="Wrangler">Wrangler</label><br />
+
+<input type="checkbox" id="Alma" name="Alma">
+<label for="Alma">Alma</label><br />
+
+<input type="checkbox" id="Converse" name="Converse">
+<label for="Converse">Converse</label><br />
+
+<input type="checkbox" id="Mark" name="Mark">
+<label for="Mark">Mark</label><br />
+
+<input type="checkbox" id="Peter" name="Peter">
+<label for="Peter">Peter</label><br />
+
+<input type="checkbox" id="Paris" name="Paris">
+<label for="Paris">Paris</label><br />
+
+<input type="checkbox" id="DKNY" name="DKNY">
+<label for="DKNY">DKNY</label><br />
+
+<input type="checkbox" id="Raymond" name="Raymond">
+<label for="Raymond">Raymond</label><br />
+
+<input type="checkbox" id="Gatsby" name="Gatsby">
+<label for="Gatsby">Gatsby</label><br />
+
+<input type="checkbox" id="iPanema" name="iPanema">
+<label for="iPanema">iPanema</label><br />
+
+<input type="checkbox" id="PUMA" name="PUMA">
+<label for="PUMA">PUMA</label><br />
+
+<input type="checkbox" id="ADIDAS" name="ADIDAS">
+<label for="ADIDAS">ADIDAS</label><br />
+
+<input type="checkbox" id="Classic" name="Classic">
+<label for="Classic">Classic</label><br />
+
+<input type="checkbox" id="Dunhill" name="Dunhill">
+<label for="Dunhill">Dunhill</label><br />
+
+<input type="checkbox" id="Provogue" name="Provogue">
+<label for="Provogue">Provogue</label><br />
+
+<input type="checkbox" id="YARDLEY" name="YARDLEY">
+<label for="YARDLEY">YARDLEY</label><br />
+
+<input type="checkbox" id="Scullers" name="Scullers">
+<label for="Scullers">Scullers</label><br />
+
+<input type="checkbox" id="Hidekraft" name="Hidekraft">
+<label for="Hidekraft">Hidekraft</label><br />
+
+<input type="checkbox" id="Adidas" name="Adidas">
+<label for="Adidas">Adidas</label><br />
+
+<input type="checkbox" id="Urban" name="Urban">
+<label for="Urban">Urban</label><br />
+
+<input type="checkbox" id="Flying" name="Flying">
+<label for="Flying">Flying</label><br />
+
+<input type="checkbox" id="Tiptopp" name="Tiptopp">
+<label for="Tiptopp">Tiptopp</label><br />
+
+<input type="checkbox" id="HM" name="HM">
+<label for="HM">HM</label><br />
+
+<input type="checkbox" id="Mother" name="Mother">
+<label for="Mother">Mother</label><br />
+
+<input type="checkbox" id="Estd." name="Estd.">
+<label for="Estd.">Estd.</label><br />
+
+<input type="checkbox" id="Indigo" name="Indigo">
+<label for="Indigo">Indigo</label><br />
+
+<input type="checkbox" id="Spice" name="Spice">
+<label for="Spice">Spice</label><br />
+
+<input type="checkbox" id="Mumbai" name="Mumbai">
+<label for="Mumbai">Mumbai</label><br />
+
+<input type="checkbox" id="Turtle" name="Turtle">
+<label for="Turtle">Turtle</label><br />
+
+<input type="checkbox" id="Superman" name="Superman">
+<label for="Superman">Superman</label><br />
+
+<input type="checkbox" id="Carrera" name="Carrera">
+<label for="Carrera">Carrera</label><br />
+
+<input type="checkbox" id="Estee" name="Estee">
+<label for="Estee">Estee</label><br />
+
+<input type="checkbox" id="Fossil" name="Fossil">
+<label for="Fossil">Fossil</label><br />
+
+<input type="checkbox" id="Force" name="Force">
+<label for="Force">Force</label><br />
+
+<input type="checkbox" id="Palm" name="Palm">
+<label for="Palm">Palm</label><br />
+
+<input type="checkbox" id="Lino" name="Lino">
+<label for="Lino">Lino</label><br />
+
+<input type="checkbox" id="Biara" name="Biara">
+<label for="Biara">Biara</label><br />
+
+<input type="checkbox" id="Skechers" name="Skechers">
+<label for="Skechers">Skechers</label><br />
+
+<input type="checkbox" id="ONLY" name="ONLY">
+<label for="ONLY">ONLY</label><br />
+
+<input type="checkbox" id="Kenneth" name="Kenneth">
+<label for="Kenneth">Kenneth</label><br />
+
+<input type="checkbox" id="ColorBar" name="ColorBar">
+<label for="ColorBar">ColorBar</label><br />
+
+<input type="checkbox" id="Celine" name="Celine">
+<label for="Celine">Celine</label><br />
+
+<input type="checkbox" id="Parx" name="Parx">
+<label for="Parx">Parx</label><br />
+
+<input type="checkbox" id="Latin" name="Latin">
+<label for="Latin">Latin</label><br />
+
+<input type="checkbox" id="Garfield" name="Garfield">
+<label for="Garfield">Garfield</label><br />
+
+<input type="checkbox" id="New" name="New">
+<label for="New">New</label><br />
+
+<input type="checkbox" id="Ben" name="Ben">
+<label for="Ben">Ben</label><br />
+
+<input type="checkbox" id="Aneri" name="Aneri">
+<label for="Aneri">Aneri</label><br />
+
+<input type="checkbox" id="Mod-acc" name="Mod-acc">
+<label for="Mod-acc">Mod-acc</label><br />
+
+<input type="checkbox" id="Tabac" name="Tabac">
+<label for="Tabac">Tabac</label><br />
+
+<input type="checkbox" id="Marvel" name="Marvel">
+<label for="Marvel">Marvel</label><br />
+
+<input type="checkbox" id="Miami" name="Miami">
+<label for="Miami">Miami</label><br />
+
+<input type="checkbox" id="Global" name="Global">
+<label for="Global">Global</label><br />
+
+<input type="checkbox" id="Wills" name="Wills">
+<label for="Wills">Wills</label><br />
+
+<input type="checkbox" id="Redtape" name="Redtape">
+<label for="Redtape">Redtape</label><br />
+
+<input type="checkbox" id="Diva" name="Diva">
+<label for="Diva">Diva</label><br />
+
+<input type="checkbox" id="CASIO" name="CASIO">
+<label for="CASIO">CASIO</label><br />
+
+<input type="checkbox" id="Bwitch" name="Bwitch">
+<label for="Bwitch">Bwitch</label><br />
+
+<input type="checkbox" id="SDL" name="SDL">
+<label for="SDL">SDL</label><br />
+
+<input type="checkbox" id="Polaroid" name="Polaroid">
+<label for="Polaroid">Polaroid</label><br />
+
+<input type="checkbox" id="Beyouty" name="Beyouty">
+<label for="Beyouty">Beyouty</label><br />
+
+<input type="checkbox" id="Vero" name="Vero">
+<label for="Vero">Vero</label><br />
+
+<input type="checkbox" id="SKAGEN" name="SKAGEN">
+<label for="SKAGEN">SKAGEN</label><br />
+
+<input type="checkbox" id="Saint" name="Saint">
+<label for="Saint">Saint</label><br />
+
+<input type="checkbox" id="Salomon" name="Salomon">
+<label for="Salomon">Salomon</label><br />
+
+<input type="checkbox" id="Elle" name="Elle">
+<label for="Elle">Elle</label><br />
+
+<input type="checkbox" id="M" name="M">
+<label for="M">M</label><br />
+
+<input type="checkbox" id="Black" name="Black">
+<label for="Black">Black</label><br />
+
+<input type="checkbox" id="Mr.Men" name="Mr.Men">
+<label for="Mr.Men">Mr.Men</label><br />
+
+<input type="checkbox" id="OTLS" name="OTLS">
+<label for="OTLS">OTLS</label><br />
+
+<input type="checkbox" id="Avengers" name="Avengers">
+<label for="Avengers">Avengers</label><br />
+
+<input type="checkbox" id="Giny" name="Giny">
+<label for="Giny">Giny</label><br />
+
+<input type="checkbox" id="Lotto" name="Lotto">
+<label for="Lotto">Lotto</label><br />
+
+<input type="checkbox" id="Nike" name="Nike">
+<label for="Nike">Nike</label><br />
+
+<input type="checkbox" id="Rockport" name="Rockport">
+<label for="Rockport">Rockport</label><br />
+
+<input type="checkbox" id="Tokyo" name="Tokyo">
+<label for="Tokyo">Tokyo</label><br />
+
+<input type="checkbox" id="York" name="York">
+<label for="York">York</label><br />
+
+<input type="checkbox" id="Free" name="Free">
+<label for="Free">Free</label><br />
+
+<input type="checkbox" id="The" name="The">
+<label for="The">The</label><br />
+
+<input type="checkbox" id="Gliders" name="Gliders">
+<label for="Gliders">Gliders</label><br />
+
+<input type="checkbox" id="Remanika" name="Remanika">
+<label for="Remanika">Remanika</label><br />
+
+<input type="checkbox" id="Mayhem" name="Mayhem">
+<label for="Mayhem">Mayhem</label><br />
+
+<input type="checkbox" id="Madagascar3" name="Madagascar3">
+<label for="Madagascar3">Madagascar3</label><br />
+
+<input type="checkbox" id="La-Emotio" name="La-Emotio">
+<label for="La-Emotio">La-Emotio</label><br />
+
+<input type="checkbox" id="Prafful" name="Prafful">
+<label for="Prafful">Prafful</label><br />
+
+<input type="checkbox" id="Campbell" name="Campbell">
+<label for="Campbell">Campbell</label><br />
+
+<input type="checkbox" id="Giorgio" name="Giorgio">
+<label for="Giorgio">Giorgio</label><br />
+
+<input type="checkbox" id="FNF" name="FNF">
+<label for="FNF">FNF</label><br />
+
+<input type="checkbox" id="Mtv" name="Mtv">
+<label for="Mtv">Mtv</label><br />
+
+<input type="checkbox" id="ANT" name="ANT">
+<label for="ANT">ANT</label><br />
+          </div>
+        </div> -->
+        <div class="b">
+          <h3>PRICE</h3>
+          <div>
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">0$ to 100$</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">100$ to 200$</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">200$ to 300$</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">300$ to 600$</label><br />
+          </div>
+        </div>
+        <div class="b">
+          <h3>COLOR</h3>
+          <div>
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">Blue</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">Navy Blue</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">Black</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">White</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">Grey</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">Red</label><br />
+            <input type="checkbox" id="cb" name="group" />
+            <label for="cb">Green</label><br />
+          </div>
+        </div>
+        <div class="c">
+          <h3>DISCOUNT RANGE</h3>
+          <div>
+            <input type="radio" id="rb" name="group" />
+            <label for="rb">10% and above</label><br />
+            <input type="radio" id="rb" name="group" />
+            <label for="rb">20% and above</label><br />
+            <input type="radio" id="rb" name="group" />
+            <label for="rb">30% and aboves</label><br />
+            <input type="radio" id="rb" name="group" />
+            <label for="rb">40% and above</label><br />
+            <input type="radio" id="rb" name="group" />
+            <label for="rb">50% and above</label><br />
+            <input type="radio" id="rb" name="group" />
+            <label for="rb">60% and above</label><br />
+          </div>
+        </div>
+      </div>
+
+      <div id="container"></div>
+    </div>
+    
+    <div class="container" style="margin-top:5%; margin-bottom: 5%;">
+      <div class="row" style="display:flex; justify-content: center; align-content: space-between ;">
+        <div class="col-lg-4"  style="margin-right:40%">
+          <button id="prevPage" style="padding:10px; color:saddlebrown">Previous</button>
+        </div>
+        <div class="col-lg-4">
+          <p id="pageNumber" style="color:saddlebrown;"></p>
+        </div>
+        <div class="col-lg-4"  style="margin-left:40%">
+          <button id="nextPage"style="padding:10px; color:saddlebrown">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Online Shopping</h3>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>HELP & SUPPORT</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Shop With Us</h3>
+              <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Offers</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"> <i class="icon ion-social-twitter"></i></a
+              ><a href="#"> <i class="icon ion-social-snapchat"></i></a
+              ><a href="#"> <i class="icon ion-social-instagram"></i></a>
+            </div>
+            <p style="color: saddlebrown; clear: both">
+              &copy; 2023 www.li8.com. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../assets/js/boys.js"></script>
+</html>
